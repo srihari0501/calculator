@@ -8,34 +8,36 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1 id="title"><b>Calculator</b></h1>
+    <p id="description"><b>Calculator</b></p>
   <div class="calculator">
-    <input type="text" id="display" class="form-control mb-3" readonly>
+    <input type="text" id="result" class="form-control mb-3" readonly>
     <div class="buttons">
-        <button onclick="appendToDisplay('7')">7</button>
-        <button onclick="appendToDisplay('8')">8</button>
-        <button onclick="appendToDisplay('9')">9</button>
-        <button onclick="performOperation(' / ')">/</button>
-        <button onclick="appendToDisplay('4')">4</button>
-        <button onclick="appendToDisplay('5')">5</button>
-        <button onclick="appendToDisplay('6')">6</button>
-        <button onclick="performOperation(' * ')">*</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('2')">2</button>
-        <button onclick="appendToDisplay('3')">3</button>
-        <button onclick="performOperation(' - ')">-</button>
+        <button id="7" onclick="appendToDisplay('7')">7</button>
+        <button id="8" onclick="appendToDisplay('8')">8</button>
+        <button id="9" onclick="appendToDisplay('9')">9</button>
+        <button id="division" onclick="performOperation(' / ')">/</button>
+        <button id="4" onclick="appendToDisplay('4')">4</button>
+        <button id="5" onclick="appendToDisplay('5')">5</button>
+        <button id="6" onclick="appendToDisplay('6')">6</button>
+        <button id="multiply" onclick="performOperation(' * ')">*</button>
+        <button id="1" onclick="appendToDisplay('1')">1</button>
+        <button id="2" onclick="appendToDisplay('2')">2</button>
+        <button id="3" onclick="appendToDisplay('3')">3</button>
+        <button id="subtract" onclick="performOperation(' - ')">-</button>
         <button onclick="appendToDisplay('0')">0</button>
         <button onclick="appendToDisplay('.')">.</button>
-        <button onclick="calculateResult()">=</button>
-        <button onclick="performOperation(' + ')">+</button>
+        <button id="equal"  onclick="calculateResult()">=</button>
+        <button id="add" onclick="performOperation(' + ')">+</button>
       </div>
       <div class="buttons">
-        <button onclick="clearDisplay()">C</button>
+        <button id="clear" onclick="clearDisplay()">C</button>
         <button onclick="addToMemory()">M+</button>
         <button onclick="subtractFromMemory()">M-</button>
-        <button onclick="clearMemory()">MC</button>
+        <button id="clear" onclick="clearMemory()">MC</button>
       </div>
     </div>
-
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
