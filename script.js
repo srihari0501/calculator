@@ -1,4 +1,4 @@
-let display = document.getElementById('display');
+let display = document.getElementById('result');
 
 function appendToDisplay(value) {
   display.value += value;
@@ -78,3 +78,4 @@ document.addEventListener('keydown', function (event) {
     alert('Only numbers are allowed');
   }
 });
+
